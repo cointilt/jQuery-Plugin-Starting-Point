@@ -16,25 +16,28 @@
 	{
 		$.fn.pluginName = function ( options )
 		{
-			// Default options
-			var defaults = {
-				'class': 'class-name'
-			}
-			
-			// Merge default options and custom options
-			var options = $.extend( defaults, options );
+			// Merge default options with passed options to create local options
+			var options = $.extend( {}, $.fn.pluginName.defaults, options );
 			
 			return this.each(
 				
 				function()
 				{
 					// Set up basic vars
-					var o = options,
-						$this = $(this);
+					var o = options;
+					var $this = $(this);
 						
 					// Start Plugin here
 				}
 			);
+		}
+		
+		$.fn.pluginName.defaults = {
+			key: 'val',
+			customMethod: function ( e, params )
+			{
+				
+			}
 		}
 	}
 ) ( jQuery, document, window );
