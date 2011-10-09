@@ -11,7 +11,7 @@
  * @link https://github.com/cointilt/jQuery-Plugin-Starting-Point
 */
 
-(
+;(
 	function( $, document, undefined )
 	{
 		$.fn.pluginName = function ( options )
