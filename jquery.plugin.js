@@ -30,7 +30,7 @@
 					// Start Plugin here
 				}
 			);
-		}
+		};
 		
 		$.fn.pluginName.defaults = {
 			key: 'val',
@@ -38,6 +38,6 @@
 			{
 				
 			}
-		}
+		};
 	}
 ) ( jQuery, document, window );
