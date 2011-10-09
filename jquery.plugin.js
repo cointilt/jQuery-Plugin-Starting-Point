@@ -12,7 +12,7 @@
 */
 
 ;(
-	function( $, document, undefined )
+	function( $, document, window, undefined )
 	{
 		$.fn.pluginName = function ( options )
 		{
@@ -37,4 +37,4 @@
 			);
 		}
 	}
-) ( jQuery, document );
+) ( jQuery, document, window );
