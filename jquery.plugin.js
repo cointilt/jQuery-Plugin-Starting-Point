@@ -1,7 +1,14 @@
 /**
- * jQuery Plugin Starting Point
+ * jQuery Plugin Starting Point - A base jquery plugin template
  *
- * @author Will Ayers - will@wearemotive.com
+ * Use this template as a base to create any jQuery plugin.
+ *
+ * Licensed under the MIT:
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ * @author Will Ayers ( @cointilt )
+ * @version 1.1
+ * @link https://github.com/cointilt/jQuery-Plugin-Starting-Point
 */
 
 (
@@ -21,6 +28,10 @@
 				
 				function()
 				{
+					// Set up basic vars
+					var o = options,
+						$this = $(this);
+						
 					// Start Plugin here
 				}
 			);
