@@ -11,27 +11,23 @@
  * @link https://github.com/cointilt/jQuery-Plugin-Starting-Point
 */
 
-;( function( $, document, window, undefined ) {
-		$.fn.pluginName = function plugin_name_init( options ) {
-			// Merge default options with passed options to create local options
-			var o = $.extend( {}, $.fn.pluginName.defaults, options );
+;(function ($, document, window, undefined) {
+	$.fn.pluginName = function plugin_name_init (options) {
+		// Merge default options with passed options to create local options
+		var o = $.extend($.fn.pluginName.defaults, options);
 
-			return this.each(
+		return this.each(function plugin_name_loop() {
+			// Set up basic vars
+			var $this = $(this);
+			
+			// Start Plugin here
+		});
+	};
 
-				function plugin_name_loop() {
-					// Set up basic vars
-					var $this = $(this);
-
-					// Start Plugin here
-				}
-			);
-		};
-
-		$.fn.pluginName.defaults = {
-			key: 'val',
-			customMethod: function ( e, params ) {
-
-			}
-		};
-	}
-) ( jQuery, document, window );
+	$.fn.pluginName.defaults = {
+		key: 'val',
+		customMethod: function (e, params) {
+			// Custom function
+		}
+	};
+}(jQuery, document, window));
